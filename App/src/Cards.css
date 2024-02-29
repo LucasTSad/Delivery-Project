@@ -1,0 +1,55 @@
+.Card {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    padding: 15px;
+    cursor: pointer;
+    border: 2px solid #a0a7a0;
+    border-radius: 20px;
+    display: flex;
+    background-color: #fff;
+    transition: 0.5s;
+    
+}
+
+.Card .container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.titulo {
+    font-size: 1.5em;
+}
+
+.texto {
+    font-size: 0.9em;
+    color: #787d78;
+}
+
+.texto, .preco {
+    margin-top: 5px;
+}
+
+.preco{
+    color: #03ff03;
+    font-weight: bold;
+}
+
+.imagem{
+    width: 120px;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.Card:hover{
+    transform: scale(1.03);
+    border-color: #ff3737;
+    transition: 0.5s;
+}

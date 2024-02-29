@@ -1,0 +1,20 @@
+.footer-container{
+    position:static;
+}
+
+.footer-fundo{
+    background-image: url(./assets/pngtree-snack-eating-goods-mouth-tooth-image_5820.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    padding: 10px;
+    margin-top: 25px;
+}
+
+.footer-conteudo{
+    text-align: center;
+    font-size: 0.8em;
+    color: #fff;
+    text-shadow: 5px 3px 4px #000;  
+}

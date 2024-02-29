@@ -1,0 +1,255 @@
+.pagamento-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+
+.pagamento-box {
+    display: flex;
+    flex-direction: column;
+    max-height: 85vh;
+    width: 60%;
+    background-color: #f2f1f1;
+    border: 4px solid #ff0000;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    z-index: 1;
+    overflow-y: auto;
+    scrollbar-color: #ff0000 #f2f1f1; 
+    scrollbar-width: thin;
+    box-shadow: 10px 10px 40px #000;
+}
+
+.pagamento-box::-webkit-scrollbar {
+    width: 6px;
+}
+
+.pagamento-box::-webkit-scrollbar-thumb {
+    background-color: #ff0000; 
+    border-radius: 6px; 
+}
+
+.pagamento-box::-webkit-scrollbar-track {
+    background-color: #f2f1f1; 
+    border-radius: 10px; 
+}
+
+
+.pagamento-box-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.pagamento-titulo {
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+.pagamento-tipos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.pagamento-radio{
+    cursor: pointer;
+    height: 1.1em;
+    width: 1.1em;
+}
+
+.radio-texto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.pagar{
+    color: #fff;
+    background-color: #ff0000;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.pagar:hover{
+    background-color: #fa3f3f;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+
+.info{
+    font-weight: bold;
+    color: #ff0000;
+    text-align: center;
+}
+
+.validade-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.validade-box{
+    cursor: pointer;
+    border:none;
+    appearance: none;
+    padding: 0 30px 0 15px;
+    width: 100%;
+    color: #ff0000;
+    background-color: #fff;
+    font-size: 15px;
+    border-radius: 20px;
+    border: 2px solid #ff0000;
+}
+
+.validade-box:focus{
+    outline: none;
+}
+
+.input-caixa{
+    border: 2px solid #ff0000;
+    border-radius: 10px;
+    padding: 5px;
+    color: rgb(68, 68, 68);
+}
+
+.input-caixa:focus{
+    outline: none;
+}
+
+.input-obs{
+    border: 2px solid #ff0000;
+    border-radius: 10px;
+    padding: 10px;
+    height: 200px;
+    color: rgb(68, 68, 68);
+}
+
+.input-obs:focus{
+    outline: none;
+}
+
+.textarea-obs{
+    margin: 10px;
+}
+
+.textarea-observ{
+    border: 2px solid #ff0000;
+    border-radius: 10px;
+    padding: 10px;
+    height: 200px;
+    width:100%;
+    color: rgb(68, 68, 68);
+}
+
+.textarea-observ:focus{
+    outline: none;
+}
+
+.conteudo-invisivel {
+    display: none;
+}
+
+.conteudo-visivel {
+    display: block;
+}
+
+.preco-total-texto,.preco-total-texto-preco{
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.preco-total-texto-preco{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.pagamento-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagamento-fechar{
+    background-color: #ff0000;
+    border-radius: 50%;
+    border: none;
+    padding: 5px;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+.pagamento-fechar:hover{
+    background-color: #fa3f3f;
+}
+
+.pagamento-titulo {
+    flex:1; 
+}
+
+.tipo-cartao-espacamento{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width:610px){
+    .pagamento-box{
+        width: 100%;
+        height: 100%;
+    }
+
+    .radio-texto{
+        font-size: 14px;
+    }
+
+    .pagamento-titulo{
+        font-size: 16px;
+    }
+
+    .pagamento-fechar{
+        font-size: 8px;
+        padding: 3px;
+        height: 15px;
+        width: 15px;
+    }
+    
+    .info{
+        font-size: 14px;
+    }
+
+}
